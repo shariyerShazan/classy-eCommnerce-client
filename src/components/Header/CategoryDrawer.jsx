@@ -61,11 +61,11 @@ const CategoryDrawer = ({ openCtg, setOpenCtg }) => {
           <ListItem disablePadding>
             <ListItemButton
               onClick={() => hasSub && toggleItem(key)}
-              className="flex justify-between items-center text-sm hover:!text-primary transition-colors duration-300"
+              className="flex justify-between items-center !py-1 !text-sm hover:!text-primary transition-colors duration-300"
             >
-              <ListItemText primary={cat.name} className="text-sm" />
+              <ListItemText primary={cat.name} className="!text-sm !py-1" />
               {hasSub && (
-                <span className="text-sm">
+                <span className="!text-sm !py-1">
                   {isOpen ? <CiSquareMinus size={23}/> : <CiSquarePlus size={23}/>}
                 </span>
               )}
@@ -78,7 +78,7 @@ const CategoryDrawer = ({ openCtg, setOpenCtg }) => {
                 if (typeof subItem === "string") {
                   return (
                     <ListItem key={`${key}-s-${subIdx}`} disablePadding>
-                      <ListItemButton className="text-sm hover:!text-primary transition-colors duration-300" sx={{ pl: 2 }}>
+                      <ListItemButton className="!text-sm hover:!text-primary !py-1 transition-colors duration-300" sx={{ pl: 2 }}>
                         <ListItemText primary={subItem} />
                       </ListItemButton>
                     </ListItem>

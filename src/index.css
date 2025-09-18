@@ -29,3 +29,55 @@ body {
 .parent:hover .parent-hover\:block {
   display: block;
 }
+
+
+
+
+/* Wrapper padding to show 5% previews */
+.slider-container .swiper-wrapper {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+/* Default slide small */
+.custom-swiper .custom-slide {
+  width: 90% !important;  /* main slide width 90% */
+  transition: all 1s ease;
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+
+/* Active slide centered & bigger */
+.custom-swiper .custom-slide.swiper-slide-active {
+  width: 90% !important;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Nav buttons */
+.custom-swiper-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  background: #fff;
+  color: #000;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-swiper-prev {
+  left: 7%;
+}
+
+.custom-swiper-next {
+  right: 7%;
+}
+
+/* Hide default swiper nav */
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  display: none;
+}
