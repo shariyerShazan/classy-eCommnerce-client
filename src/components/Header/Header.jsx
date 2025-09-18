@@ -1,5 +1,5 @@
 import React from 'react'
-import Topper from './Topper'
+// import Topper from './Topper'
 import { Link } from 'react-router'
 import Button from '@mui/material/Button';
 import Badge from '@mui/material/Badge';
@@ -10,6 +10,7 @@ import { TbShoppingCart } from "react-icons/tb";
 import { IoMdHeartEmpty } from "react-icons/io";
 import Tooltip from '@mui/material/Tooltip';
 import Navigation from './Navigation';
+// import Navigation from './Navigation';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -25,7 +26,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 const Header = () => {
   return (
     <div>
-       <Topper />
         <div className='header py-3 border-b-1 border-gray-300'>
              <div className='container  flex items-center justify-between'>
                    <div className='col-1 '>

@@ -57,6 +57,7 @@ const CategoryDrawer = ({ openCtg, setOpenCtg }) => {
 
       return (
         <List key={key} disablePadding>
+            
           <ListItem disablePadding>
             <ListItemButton
               onClick={() => hasSub && toggleItem(key)}
@@ -96,10 +97,16 @@ const CategoryDrawer = ({ openCtg, setOpenCtg }) => {
 
   return (
     <Drawer open={openCtg} onClose={() => setOpenCtg(false)}>
-      <Box sx={{ width: 250 }} role="presentation">
-        {renderCategories(categoriesData)}
-      </Box>
-    </Drawer>
+    <Box sx={{ width: 250 }} role="presentation">
+      {/* Logo on top */}
+      <div className="flex justify-center py-4 border-b border-gray-200">
+        <img src="./logo.svg" className="w-54" alt="Logo" />
+      </div>
+
+      {/* Categories */}
+      {renderCategories(categoriesData)}
+    </Box>
+  </Drawer>
   );
 };
 

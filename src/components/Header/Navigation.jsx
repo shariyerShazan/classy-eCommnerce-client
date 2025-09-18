@@ -18,13 +18,12 @@ const Navigation = () => {
         <div className='container flex items-center justify-between'>
             
             <div className='col-1 py-2 flex items-center'>
-            <Button onClick={openCategory} className='!text-black   !flex !gap-2 '>
+            <Button onClick={openCategory} className='!text-black !py-2 !px-2 !flex !gap-2 '>
                    <CgMenuLeftAlt size={20}/>
                       Shop By Categories
                       <TfiAngleDown className='ml-12' size={20}/>
                    </Button>
-                   <p className='border-r-2 mx-6 border-r-gray-300'>
-                    
+                   <p className='border-r-2 mr-6  border-r-gray-300'>
                     </p>
 
                 {/* Categories */}
