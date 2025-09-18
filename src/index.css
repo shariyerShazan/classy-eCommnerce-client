@@ -23,3 +23,9 @@ body {
 .MuiButtonBase-root .MuiTouchRipple-rippleVisible {
   color: #ff5252;
 }
+
+
+
+.parent:hover .parent-hover\:block {
+  display: block;
+}
