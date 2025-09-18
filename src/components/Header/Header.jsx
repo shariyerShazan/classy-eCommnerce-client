@@ -8,6 +8,8 @@ import IconButton from '@mui/material/IconButton';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { TbShoppingCart } from "react-icons/tb";
 import { IoMdHeartEmpty } from "react-icons/io";
+import Tooltip from '@mui/material/Tooltip';
+import Navigation from './Navigation';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -60,23 +62,28 @@ const Header = () => {
                          </ul>
                          <ul className='flex items-center gap-3'>
                             <li>
+                                <Tooltip title="White List">
                                    <IconButton aria-label="cart">
-                                        <StyledBadge badgeContent={4} color="secondary">
-                                            <IoMdHeartEmpty />
+                                        <StyledBadge badgeContent={4}  color="secondary">
+                                            <IoMdHeartEmpty size={23}/>
                                         </StyledBadge>
                                  </IconButton>
+                                 </Tooltip>
                             </li>
                             <li>
+                            <Tooltip title="Cart">
                                <IconButton aria-label="cart">
-                                        <StyledBadge badgeContent={4} color="secondary">
-                                            <TbShoppingCart />
+                                        <StyledBadge badgeContent={4}  color="secondary">
+                                            <TbShoppingCart size={23} />
                                         </StyledBadge>
                                  </IconButton>
+                                </Tooltip>
                             </li>
                          </ul>
                    </div>
              </div>
         </div>
+        <Navigation />
     </div>
   )
 }

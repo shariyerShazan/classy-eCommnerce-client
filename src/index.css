@@ -14,4 +14,12 @@ body {
   /* --color-primary: #ff5252; */
 }
 
+.MuiBadge-badge{
+  background-color: #ff5252 !important;
+}
 
+
+/* App.css */
+.MuiButtonBase-root .MuiTouchRipple-rippleVisible {
+  color: #ff5252;
+}
