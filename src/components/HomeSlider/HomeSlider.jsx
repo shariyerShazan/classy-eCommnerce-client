@@ -5,6 +5,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import HomeCatSlider from "./HomeCatSlider";
 
 const slides = [
   "./banner-1.jpg",
@@ -15,7 +16,7 @@ const slides = [
 
 export default function HomeSlider() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-secondary py-5">
       <div className="relative mx-auto slider-container">
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -48,6 +49,7 @@ export default function HomeSlider() {
           <MdKeyboardArrowRight size={28} />
         </button>
       </div>
+      <HomeCatSlider />
     </div>
   );
 }
