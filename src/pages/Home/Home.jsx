@@ -1,12 +1,15 @@
 import React from 'react'
 import HomeSlider from '../../components/HomeSlider/HomeSlider'
-import FreeShiping from '../../components/Shipping/FreeShiping'
+import FreeShipingBanner from '../../components/Shipping/FreeShipingBanner'
+import DiscountBanner from '../../components/Shipping/DiscountBanner'
+
 
 const Home = () => {
   return (
     <div className='bg-secondary'>
         <HomeSlider />
-         <FreeShiping />
+         <FreeShipingBanner />
+         <DiscountBanner />
     </div>
   )
 }

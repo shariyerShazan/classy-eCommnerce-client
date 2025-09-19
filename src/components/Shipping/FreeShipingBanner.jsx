@@ -2,7 +2,7 @@ import React from 'react'
 import { LiaShippingFastSolid } from "react-icons/lia";
 import Button from '@mui/material/Button';
 
-const FreeShiping = () => {
+const FreeShipingBanner = () => {
   return (
     <div className='bg-white py-12'>
         <div className='container'>
@@ -20,15 +20,15 @@ const FreeShiping = () => {
             </div>
         </div>
     
-     <div className='py-12 text-right container grid grid-cols-2 sm:grid-cols-4  justify-between items-center gap-6'>
+     <div className='py-12 text-right container grid grid-cols-2 sm:grid-cols-4  justify-between items-center gap-2'>
 
     {/* one card */}
-                    <div className=" h-56 group relative rounded-lg overflow-hidden shadow-lg">
+                    <div className=" h-56 group relative rounded-sm overflow-hidden shadow-lg">
                       {/* Image */}
                       <img
                         src="./shipp-women.jpg"
                         alt="shipping card"
-                        className="rounded-lg w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="rounded-lg w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
 
                       {/* Content */}
@@ -48,18 +48,18 @@ const FreeShiping = () => {
 
 
 {/* second card */}
-                    <div className=" h-56  group relative rounded-lg overflow-hidden shadow-lg">
+                    <div className=" h-56  group relative rounded-sm overflow-hidden shadow-lg">
                       {/* Image */}
                       <img
                         src="./shipp-bag.png"
                         alt="shipping card"
-                        className="rounded-lg w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="rounded-lg w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
 
                       {/* Content */}
                       <div className="absolute top-1/2 left-[5%] w-[50%] -translate-y-1/2 flex flex-col items-start gap-3 backdrop-blur-md p-4 rounded-lg">
                         <p className="text-lg font-semibold text-gray-800 leading-snug text-left">
-                          Buy Women Products <br /> With Low Price
+                          Buy Men Bags <br /> With Low Price
                         </p>
                         <p className="text-2xl text-primary font-bold text-left">$100</p>
                         <Button
@@ -73,18 +73,18 @@ const FreeShiping = () => {
 
 
                     {/* third card */}
-                    <div className=" h-56 group relative rounded-lg overflow-hidden shadow-lg">
+                    <div className=" h-56 group relative rounded-sm overflow-hidden shadow-lg">
                       {/* Image */}
                       <img
                         src="./shipp-footwear.jpg"
                         alt="shipping card"
-                        className="rounded-lg w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="rounded-lg w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
 
                       {/* Content */}
                       <div className="absolute top-1/2 right-[5%] w-[50%] -translate-y-1/2 flex flex-col items-end gap-3 backdrop-blur-md p-4 rounded-lg">
                         <p className="text-lg font-semibold text-gray-800 leading-snug text-right">
-                          Buy Women Products <br /> With Low Price
+                          Buy Footwear <br /> With Low Price
                         </p>
                         <p className="text-2xl text-primary font-bold text-right">$100</p>
                         <Button
@@ -97,7 +97,7 @@ const FreeShiping = () => {
                     </div>
 
                     {/* fourth card */}
-                    <div className=" h-56 group relative rounded-lg overflow-hidden shadow-lg">
+                    <div className=" h-56 group relative rounded-sm overflow-hidden shadow-lg">
                       {/* Image */}
                       <img
                         src="./shipp-phone.jpg"
@@ -108,7 +108,7 @@ const FreeShiping = () => {
                       {/* Content */}
                       <div className="absolute top-1/2 left-[5%] w-[50%] -translate-y-1/2 flex flex-col items-start gap-3 backdrop-blur-md p-4 rounded-lg">
                         <p className="text-lg font-semibold text-gray-800 leading-snug text-left">
-                          Buy Women Products <br /> With Low Price
+                          Buy Apple Phones <br /> With Low Price
                         </p>
                         <p className="text-2xl text-primary font-bold text-left">$100</p>
                         <Button
@@ -126,4 +126,4 @@ const FreeShiping = () => {
   )
 }
 
-export default FreeShiping
+export default FreeShipingBanner
