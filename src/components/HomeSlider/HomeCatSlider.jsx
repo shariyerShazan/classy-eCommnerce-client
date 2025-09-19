@@ -20,8 +20,6 @@ const HomeCatSlider = () => {
     <div className='homeCatSlider mt-12 mb-6'>
       <div className='container mx-auto'>
         <Swiper
-          slidesPerView={8}
-          spaceBetween={15}
           modules={[Navigation, Autoplay]}
           navigation
           loop={true}
@@ -29,10 +27,12 @@ const HomeCatSlider = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
+          slidesPerView={8}       // default desktop
+          spaceBetween={15}
           breakpoints={{
-            0: { slidesPerView: 2, spaceBetween: 10 },
-            640: { slidesPerView: 3, spaceBetween: 15 },
-            1024: { slidesPerView: 5, spaceBetween: 20 },
+            0: { slidesPerView: 2, spaceBetween: 10, loop: true, autoplay: { delay: 2000 } },
+            640: { slidesPerView: 3, spaceBetween: 15, loop: true, autoplay: { delay: 2000 } },
+            1024: { slidesPerView: 5, spaceBetween: 20, loop: true, autoplay: { delay: 2000 } },
           }}
         >
           {categories.map((cat, idx) => (

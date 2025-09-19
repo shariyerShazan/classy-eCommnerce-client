@@ -10,7 +10,7 @@ const MainLayout = () => {
         <Topper />
 
         {/* Header sticky thakbe */}
-        <div className="sticky top-0 z-50">
+        <div className="sticky top-0 z-50 bg-white">
           <Header />
         </div>
 

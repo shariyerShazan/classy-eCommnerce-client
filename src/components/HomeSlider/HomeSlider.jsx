@@ -16,7 +16,7 @@ const slides = [
 
 export default function HomeSlider() {
   return (
-    <div className="w-full bg-secondary py-5">
+    <div className="w-full  py-5">
       <div className="relative mx-auto slider-container">
         <Swiper
           modules={[Navigation, Autoplay]}
