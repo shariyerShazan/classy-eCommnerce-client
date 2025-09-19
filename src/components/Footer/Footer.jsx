@@ -14,12 +14,12 @@ const Footer = () => {
           {/* first div */}
           <div className="flex flex-col gap-4 pr-4 border-r-2 border-r-gray-300">
             <h3 className="text-xl font-semibold">Contact us</h3>
-            <p>
+            <p className="text-gray-600">
               Classyshop - Mega Super Store <br />
               507-Union Trade Centre France
             </p>
             <p className="hover:text-primary cursor-pointer">sales@yourcompany.com</p>
-            <p className="text-2xl font-bold">(+880) 1724 630245</p>
+            <p className="text-2xl font-bold text-primary">(+880) 1724 630245</p>
             <div className="flex gap-3 items-center">
               <FaRegMessage size={30} />
               <p>
@@ -31,29 +31,29 @@ const Footer = () => {
           {/* Products */}
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-semibold">Products</h3>
-            <Link to={"#"} className="hover:text-primary">Prices drop</Link>
-            <Link to={"#"} className="hover:text-primary">New products</Link>
-            <Link to={"#"} className="hover:text-primary">Best sales</Link>
-            <Link to={"#"} className="hover:text-primary">Contact us</Link>
-            <Link to={"#"} className="hover:text-primary">Sitemap</Link>
-            <Link to={"#"} className="hover:text-primary">Stores</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Prices drop</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">New products</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Best sales</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Contact us</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Sitemap</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Stores</Link>
           </div>
 
           {/* Our company */}
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-semibold">Our company</h3>
-            <Link to={"#"} className="hover:text-primary">Delivery</Link>
-            <Link to={"#"} className="hover:text-primary">Legal Notice</Link>
-            <Link to={"#"} className="hover:text-primary">Terms and conditions of use</Link>
-            <Link to={"#"} className="hover:text-primary">About us</Link>
-            <Link to={"#"} className="hover:text-primary">Secure payment</Link>
-            <Link to={"#"} className="hover:text-primary">Login</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Delivery</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Legal Notice</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Terms and conditions of use</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">About us</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Secure payment</Link>
+            <Link to={"#"} className="hover:text-primary text-gray-600">Login</Link>
           </div>
 
           {/* Newsletter */}
           <div className="flex flex-col gap-3">
             <h3 className="text-xl font-semibold">Subscribe to newsletter</h3>
-            <p>
+            <p className="text-gray-600">
               Subscribe to our latest newsletter to get news about special discounts.
             </p>
             <input
@@ -64,7 +64,7 @@ const Footer = () => {
             <Button className="hover:!bg-red-500 !text-white !bg-black hover:!text-white">
               SUBSCRIBE
             </Button>
-            <p className="flex items-start gap-2">
+            <p className="flex items-start gap-2 text-gray-600">
               <Checkbox />
               I agree to the terms and conditions and the privacy policy
             </p>
