@@ -3,6 +3,7 @@ import React from 'react'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import ProductSlider from '../Products/ProductSlider';
 const PopularProducts = () => {
     const [value, setValue] = React.useState(0);
 
@@ -42,6 +43,7 @@ const PopularProducts = () => {
                             </Box>
                         </div>
                 </div>
+                <ProductSlider />
     </div>
   )
 }

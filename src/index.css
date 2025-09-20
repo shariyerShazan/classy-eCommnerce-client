@@ -91,3 +91,8 @@ body {
 .MuiTab-textColorPrimary.Mui-selected {
   color : #ff5252 !important ;
 }
+
+/* MuiRating-root  Mui-disabled css-1xc33vf-MuiRating-root */
+.ss-1xc33vf-MuiRating-root{
+  color: #FAAF00 !important;
+}
