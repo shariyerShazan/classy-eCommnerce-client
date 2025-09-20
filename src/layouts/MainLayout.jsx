@@ -3,6 +3,7 @@ import { Outlet } from 'react-router'
 import Header from '../components/Header/Header'
 import Topper from '../components/Header/Topper'
 import Footer from '../components/Footer/Footer'
+import FooterTopForHome from '../components/Footer/FooterTopForHome'
 
 const MainLayout = () => {
   return (
@@ -16,6 +17,7 @@ const MainLayout = () => {
         </div>
 
         <Outlet />
+        <FooterTopForHome />
         <Footer />
     </div>
   )

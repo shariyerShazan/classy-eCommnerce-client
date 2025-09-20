@@ -2,7 +2,7 @@ import React from 'react'
 import HomeSlider from '../../components/HomeSlider/HomeSlider'
 import FreeShipingBanner from '../../components/HomeSlider/Shipping/FreeShipingBanner'
 import DiscountBanner from '../../components/HomeSlider/Shipping/DiscountBanner'
-import FooterTopForHome from '../../components/Footer/FooterTopForHome'
+// import FooterTopForHome from '../../components/Footer/FooterTopForHome'
 import LatestProduct from '../../components/HomeSlider/Products/HomePageViews/LatestProduct'
 import FeaturedProducts from '../../components/HomeSlider/Products/HomePageViews/FeaturedProducts'
 import JewelleryProducts from '../../components/HomeSlider/Products/HomePageViews/JewelleryProducts'
@@ -32,7 +32,7 @@ const Home = () => {
           <FootwearProducts />
           <BagsProducts />
 
-         <FooterTopForHome />
+         
     </div>
   )
 }
