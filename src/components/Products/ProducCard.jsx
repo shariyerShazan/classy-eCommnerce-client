@@ -11,7 +11,7 @@ const ProducCard = () => {
    
       
   return (
-    <div className='py-12 productcard rounded-md group relative'>
+    <div className='py-6 productcard rounded-md group relative'>
          <div className='imageWrapper w-[100%] h-[400px] border-1 border-gray-300 overflow-hidden rounded-lg hover:shadow-md'>
                     <div
                     className="absolute z-50 right-2 top-14 flex flex-col items-center gap-2 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { LiaShippingFastSolid } from "react-icons/lia";
 import Button from '@mui/material/Button';
-import PopularProducts from './PopularProducts';
+import PopularProducts from '../Products/HomePageViews/PopularProducts';
 
 const FreeShipingBanner = () => {
   return (

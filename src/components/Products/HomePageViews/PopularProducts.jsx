@@ -3,7 +3,7 @@ import React from 'react'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import ProductSlider from '../Products/ProductSlider';
+import ProductSlider from '../ProductSlider';
 const PopularProducts = () => {
     const [value, setValue] = React.useState(0);
 
@@ -12,10 +12,10 @@ const PopularProducts = () => {
     };
 
   return (
-    <div className='pb-12 container '>
-                <div className='flex justify-between'>
+    <div className='pb-12  container '>
+                <div className='flex justify-between pb-4'>
                         <div>
-                            <h3 className='text-xl font-semibold'>Popular Products</h3>
+                            <h3 className='text-xl font-semibold text-gray-600'>Popular Products</h3>
                             <p className='text-sm'> Do not miss the current offers until the end of Januray.</p>
                         </div>
 
