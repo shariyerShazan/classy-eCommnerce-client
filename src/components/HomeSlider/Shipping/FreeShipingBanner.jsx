@@ -2,7 +2,7 @@ import React from 'react'
 import { LiaShippingFastSolid } from "react-icons/lia";
 import Button from '@mui/material/Button';
 import PopularProducts from '../Products/HomePageViews/PopularProducts';
-import SecondSlider from '../HomeSlider/SecondSlider';
+import SecondSlider from '../SecondSlider';
 
 const FreeShipingBanner = () => {
   return (
