@@ -2,11 +2,13 @@ import React from 'react'
 import { LiaShippingFastSolid } from "react-icons/lia";
 import Button from '@mui/material/Button';
 import PopularProducts from '../Products/HomePageViews/PopularProducts';
+import SecondSlider from '../HomeSlider/SecondSlider';
 
 const FreeShipingBanner = () => {
   return (
     <div className='bg-white py-12'>
       <PopularProducts />
+      <SecondSlider />
         <div className='container'>
             <div className='w-[85%] py-5 px-8 mx-auto border-2 border-primary flex justify-between items-center rounded-lg'>
                  <div className='flex items-center gap-4 text-xl font-semibold'>

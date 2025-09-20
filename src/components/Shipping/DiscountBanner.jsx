@@ -16,7 +16,7 @@ const DiscountBanner = () => {
             <img
               src={img}
               alt={`discount-${i}`}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:rotate-2 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:rotate-2 group-hover:scale-107"
             />
           </div>
         ))}
