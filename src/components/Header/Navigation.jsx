@@ -48,26 +48,26 @@ const Navigation = () => {
 
                                     {/* Men */}
                                     <li className='list-none relative parent'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             Men
                                         </Button>
                                         {/* Men sub-categories */}
                                         <div className='sub-menu hidden parent-hover:block absolute top-0 left-full min-w-[200px] bg-white shadow-md transition-all duration-300'>
                                             <ul>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>T-shirt</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>T-shirt</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Jeans</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Jeans</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Footwear</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Footwear</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Watch</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Watch</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Pants</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Pants</Button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -75,25 +75,25 @@ const Navigation = () => {
 
                                     {/* Women */}
                                     <li className='list-none relative parent'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             Women
                                         </Button>
                                         <div className='sub-menu hidden parent-hover:block absolute top-0 left-full min-w-[200px] bg-white shadow-md transition-all duration-300'>
                                             <ul>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Saree</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Saree</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Tops</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Tops</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Jeans</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Jeans</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Footwear</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Footwear</Button>
                                                 </li>
                                                 <li className='list-none'>
-                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>Watch</Button>
+                                                    <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>Watch</Button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -101,21 +101,21 @@ const Navigation = () => {
 
                                     {/* Kids */}
                                     <li className='list-none'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             Kids
                                         </Button>
                                     </li>
 
                                     {/* Boys */}
                                     <li className='list-none'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             Boys
                                         </Button>
                                     </li>
 
                                     {/* Girls */}
                                     <li className='list-none'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             Girls
                                         </Button>
                                     </li>
@@ -132,7 +132,7 @@ const Navigation = () => {
                             <div className='sub-menu hidden group-hover:block absolute top-full left-0 min-w-[200px] bg-white shadow-md transition-all duration-300'>
                                 {["Mobile", "Laptop", "Watch", "Charger"].map(item => (
                                     <li key={item} className='list-none'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             {item}
                                         </Button>
                                     </li>
@@ -148,7 +148,7 @@ const Navigation = () => {
                             <div className='sub-menu hidden group-hover:block absolute top-full left-0 min-w-[200px] bg-white shadow-md transition-all duration-300'>
                                 {["Men Bags", "Women Bags"].map(item => (
                                     <li key={item} className='list-none'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             {item}
                                         </Button>
                                     </li>
@@ -164,7 +164,7 @@ const Navigation = () => {
                             <div className='sub-menu hidden group-hover:block absolute top-full left-0 min-w-[200px] bg-white shadow-md transition-all duration-300'>
                                 {["Men Footwears", "Women Footwears"].map(item => (
                                     <li key={item} className='list-none'>
-                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start'>
+                                        <Button sx={{ textTransform: 'capitalize' }} component={Link} to="/" className='!text-black !w-full !text-start !justify-start hover:!text-primary'>
                                             {item}
                                         </Button>
                                     </li>

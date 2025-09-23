@@ -42,7 +42,7 @@ const ProducCard = () => {
                    <Rating name="read-only" size="small" value={4} disabled />
                    <div className='flex justify-between'>
                         <p className='line-through text-gray-600'>$120</p>
-                        <p className='line-through text-primary '>$100</p>
+                        <p className=' text-primary '>$100</p>
                    </div>
                    
                </div>
