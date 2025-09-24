@@ -23,8 +23,8 @@ const ListingSorting = () => {
 
       {/* Category */}
       <div>
-        <p className='text-xl font-bold mb-2'>Shop by Category</p>
-        <div className="max-h-50 overflow-y-scroll scrollbar-always  pr-2"> 
+        <p className='text-lg font-bold mb-2'>Shop by Category</p>
+        <div className="max-h-50 overflow-y-scroll scrollbar-always  px-2"> 
         
           <FormGroup>
             <FormControlLabel
@@ -44,8 +44,8 @@ const ListingSorting = () => {
       </div>
 
       {/* Price Filter */}
-      <div className="text-sm">
-  <p className="text-xl font-bold mb-2">Filter By Price</p>
+      <div className="text-sm px-2">
+  <p className="text-lg font-bold mb-2">Filter By Price</p>
   <Box sx={{ width: 270 }}>
     <Slider
         //  size="medium"
@@ -63,8 +63,8 @@ const ListingSorting = () => {
 </div>
 
       {/* Rating Filter */}
-      <div>
-        <p className='text-xl font-bold mb-2'>Filter By Rating</p>
+      <div className='px-2'>
+        <p className='text-lg font-bold mb-2'>Filter By Rating</p>
         <FormGroup>
           <FormControlLabel className="!text-sm" control={<Checkbox size="small" />} label={<Rating name="size-small" readOnly defaultValue={5} size="small" />} />
           <FormControlLabel className="!text-sm" control={<Checkbox size="small" />} label={<Rating name="size-small" readOnly defaultValue={4} size="small" />} />

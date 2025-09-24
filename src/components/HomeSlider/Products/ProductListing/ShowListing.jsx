@@ -6,8 +6,8 @@ import ListSubheader from "@mui/material/ListSubheader";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
-import ProducCard from "../ProductCard";
 import ProductCard from "../ProductCard";
+import ProductCardTwo from "../ProductCardTwo"; 
 
 const StyledListHeader = styled(ListSubheader)({
   backgroundImage: "var(--Paper-overlay)",
@@ -15,7 +15,9 @@ const StyledListHeader = styled(ListSubheader)({
 
 const ShowListing = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [viewType, setViewType] = React.useState("card"); 
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -24,22 +26,35 @@ const ShowListing = () => {
   };
 
   return (
-    <div className=" ">
+    <div>
+      {/* Header bar */}
       <div className="bg-[#f1f1f1] px-4 py-1 mt-6 rounded-md">
         <div className="flex gap-1 items-center justify-between">
           <div className="flex gap-1 items-center">
-            <Tooltip title="Card">
-              <Button className="!w-10 !h-10 !p-0 !text-black hover:!text-primary">
-                <MdOutlineMenu size={20} />
+            {/* Card view button */}
+            <Tooltip title="Card View">
+              <Button
+                className="!w-10 !h-10 !p-0 !text-black hover:!text-primary"
+                onClick={() => setViewType("card")}
+              >
+                <MdOutlineMenu size={22} />
               </Button>
             </Tooltip>
-            <Tooltip title="List">
-              <Button className="!w-10 !h-10 !p-0 !text-black hover:!text-primary">
-                <CiBoxList size={20} />
+
+            {/* List view button */}
+            <Tooltip title="List View">
+              <Button
+                className="!w-10 !h-10 !p-0 !text-black hover:!text-primary"
+                onClick={() => setViewType("list")}
+              >
+                <CiBoxList size={22} />
               </Button>
             </Tooltip>
-            <p className="text-sm ">There are 25 products</p>
+
+            <p className="text-sm">There are 25 products</p>
           </div>
+
+          {/* Sort by dropdown */}
           <div className="flex items-center">
             <p className="text-sm mr-4 font-bold">Sort By</p>
             <Button
@@ -48,9 +63,9 @@ const ShowListing = () => {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
-              className="!text-black  !bg-white !text-sm !font-normal"
+              className="!text-black !bg-white !text-sm !font-normal"
             >
-              Name & Pirce
+              Name & Price
             </Button>
             <Menu
               id="grouped-menu"
@@ -73,7 +88,6 @@ const ShowListing = () => {
               <MenuItem className="!text-sm !font-normal" onClick={handleClose}>
                 Name, Z To A
               </MenuItem>
-              {/* <StyledListHeader>Category 2</StyledListHeader> */}
               <MenuItem className="!text-sm !font-normal" onClick={handleClose}>
                 Price, High To Low
               </MenuItem>
@@ -85,15 +99,20 @@ const ShowListing = () => {
         </div>
       </div>
 
-
-
-
-      {/* show product here... */}
-        <div  className="grid grid-cols-5 gap-2">
-             {[1,2,3,4,5,6,7,8,9,10,11,12].map((_ , index)=>{
-                   return <ProductCard key={index} />
-                })} 
+      {/* Product show area */}
+      {viewType === "card" ? (
+        <div className="grid grid-cols-5 gap-2 my-4">
+          {[...Array(12)].map((_, index) => (
+            <ProductCard key={index} />
+          ))}
         </div>
+      ) : (
+        <div className="flex flex-col gap-3 my-4">
+          {[...Array(12)].map((_, index) => (
+            <ProductCardTwo key={index} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

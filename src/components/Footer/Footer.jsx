@@ -9,11 +9,11 @@ const Footer = () => {
 
   return (
     <div className="bg-gray-50 border-t border-gray-300">
-      <div className="container pt-10">
+      <div className="container pt-10 text-sm">
         <div className="grid md:grid-cols-4 gap-8">
           {/* first div */}
           <div className="flex flex-col gap-4 pr-4 border-r-2 border-r-gray-300">
-            <h3 className="text-xl font-semibold">Contact us</h3>
+            <h3 className="text-lg font-semibold">Contact us</h3>
             <p className="text-gray-600">
               Classyshop - Mega Super Store <br />
               507-Union Trade Centre France
@@ -29,8 +29,8 @@ const Footer = () => {
           </div>
 
           {/* Products */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-semibold">Products</h3>
+          <div className="flex flex-col gap-2 text-sm">
+            <h3 className="text-lg font-semibold">Products</h3>
             <Link to={"#"} className="hover:text-primary text-gray-600">Prices drop</Link>
             <Link to={"#"} className="hover:text-primary text-gray-600">New products</Link>
             <Link to={"#"} className="hover:text-primary text-gray-600">Best sales</Link>
@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
 
           {/* Our company */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-semibold">Our company</h3>
+          <div className="flex flex-col gap-2 text-sm">
+            <h3 className="text-lg font-semibold">Our company</h3>
             <Link to={"#"} className="hover:text-primary text-gray-600">Delivery</Link>
             <Link to={"#"} className="hover:text-primary text-gray-600">Legal Notice</Link>
             <Link to={"#"} className="hover:text-primary text-gray-600">Terms and conditions of use</Link>
@@ -51,8 +51,8 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="flex flex-col gap-3">
-            <h3 className="text-xl font-semibold">Subscribe to newsletter</h3>
+          <div className="flex flex-col gap-3 text-sm">
+            <h3 className="text-lg font-semibold">Subscribe to newsletter</h3>
             <p className="text-gray-600">
               Subscribe to our latest newsletter to get news about special discounts.
             </p>
@@ -79,7 +79,7 @@ const Footer = () => {
               <a
                 key={i}
                 href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
               >
                 <Icon size={18} />
               </a>
@@ -93,9 +93,9 @@ const Footer = () => {
 
           {/* Payment cards */}
           <div className="flex gap-1">
-            <img src="./payment.png" alt="payment methods" className="h-8" />
-            <img src="./payment-2.png" alt="payment methods" className="h-8" />
-            <img src="./payment-3.png" alt="payment methods" className="h-8" />
+            <img src="./payment.png" alt="payment methods" className="h-6" />
+            <img src="./payment-2.png" alt="payment methods" className="h-6" />
+            <img src="./payment-3.png" alt="payment methods" className="h-6" />
           </div>
         </div>
       </div>
