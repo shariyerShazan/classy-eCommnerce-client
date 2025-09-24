@@ -29,7 +29,7 @@ const ProductCard = () => {
                     </button>
                     </div>
              {/* </div> */}
-              <Link className='relative' to={"#"}>
+              <Link className='relative' to={"/products/shazan"}>
               <img src="https://serviceapi.spicezgold.com/download/1753711304616_zoom_1-1677748187.jpg" alt="" className='w-full h-[50%] rounded-t-md object-cover object-top'/>
                <p className='w-max p-[2px] rounded-sm  bg-primary text-white absolute top-2 left-2'>
                    10%
@@ -38,7 +38,7 @@ const ProductCard = () => {
 
                <div className='p-2.5 py-6 flex flex-col gap-1'>
                   <h3 className=' text-gray-600'>Company name</h3>
-                   <Link className=' hover:text-primary' to={"#"}> Lorem ipsum dolor sit amet....</Link>
+                   <Link className=' hover:text-primary' to={"/products/shazan"}> Lorem ipsum dolor sit amet....</Link>
                    <Rating name="read-only" size="small" value={4} disabled />
                    <div className='flex justify-between'>
                         <p className='line-through text-gray-600'>$120</p>
@@ -47,7 +47,7 @@ const ProductCard = () => {
                    
                </div>
                  <div className='px-2'>
-                 <Button className='!bg-white !border-primary hover:!bg-black hover:!border-black !w-full !border-1 hover:!text-white !text-primary '>
+                 <Button className='!bg-white transition-all duration-300 !border-primary hover:!bg-black hover:!border-black !w-full !border-1 hover:!text-white !text-primary '>
                     <IoCartOutline  size={20} className='mr-2'/>
                        ADD TO CART
                    </Button>

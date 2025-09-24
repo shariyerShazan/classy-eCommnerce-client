@@ -62,7 +62,7 @@ const ProductCardTwo = () => {
           <p className="text-primary font-semibold">$100</p>
         </div>
 
-        <Button className="!bg-white !border-primary hover:!bg-black hover:!border-black !w-max !px-6 !border !text-primary hover:!text-white">
+        <Button className="!bg-white !border-primary hover:!bg-black hover:!border-black !w-max !px-6 !border !text-primary hover:!text-white transition-all duration-300">
           <IoCartOutline size={18} className="mr-2" />
           ADD TO CART
         </Button>

@@ -13,10 +13,10 @@ const Topper = () => {
                          <div className='col-2 justify-end items-center'>
                                <ul className='flex items-center gap-4'>
                                    <li className='list-none'>
-                                      <Link to={"/help-center"} className=' text-md hover:text-primary cursor-pointer duration-300 transition-all px-4 border-r-1 border-r-gray-300'>Help Center</Link>
+                                      <Link to={"/#"} className=' text-md hover:text-primary cursor-pointer duration-300 transition-all px-4 border-r-1 border-r-gray-300'>Help Center</Link>
                                    </li>
                                    <li className='list-none'>
-                                      <Link to={"/order-tracking"} className=' text-md hover:text-primary cursor-pointer duration-300 transition-all '>Order Tracking</Link>
+                                      <Link to={"/#"} className=' text-md hover:text-primary cursor-pointer duration-300 transition-all '>Order Tracking</Link>
                                    </li>
                                </ul>
                          </div>

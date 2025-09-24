@@ -61,7 +61,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 30;
-  background: #fff;
+  background: #ffffff;
   color: #000;
   padding: 12px;
   border-radius: 50%;
@@ -135,4 +135,18 @@ body {
 
 .scrollbar-always::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+
+
+
+
+.MuiPaginationItem-root.Mui-selected {
+  background-color: #ff5252 !important; 
+  color: white;
+}
+
+
+.MuiPaginationItem-root.Mui-selected:hover {
+  background-color: #ff5252 !important; 
 }

@@ -1,13 +1,14 @@
 import React from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import { CiBoxList } from "react-icons/ci";
-import { Button, Tooltip } from "@mui/material";
+import { Button, Pagination, PaginationItem, Stack, Tooltip } from "@mui/material";
 import ListSubheader from "@mui/material/ListSubheader";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
 import ProductCard from "../ProductCard";
 import ProductCardTwo from "../ProductCardTwo"; 
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 
 const StyledListHeader = styled(ListSubheader)({
   backgroundImage: "var(--Paper-overlay)",
@@ -34,7 +35,7 @@ const ShowListing = () => {
             {/* Card view button */}
             <Tooltip title="Card View">
               <Button
-                className="!w-10 !h-10 !p-0 !text-black hover:!text-primary"
+                className="!w-10 !h-10 !p-0 !text-black hover:!text-primary "
                 onClick={() => setViewType("card")}
               >
                 <MdOutlineMenu size={22} />
@@ -58,6 +59,7 @@ const ShowListing = () => {
           <div className="flex items-center">
             <p className="text-sm mr-4 font-bold">Sort By</p>
             <Button
+              sx={{ textTransform: 'capitalize' }}
               id="basic-button"
               aria-controls={open ? "grouped-menu" : undefined}
               aria-haspopup="true"
@@ -113,6 +115,22 @@ const ShowListing = () => {
           ))}
         </div>
       )}
+
+
+          <div className="flex justify-center items-center pb-6">
+              <Stack className="!text-lg" spacing={2}>
+                <Pagination
+                  size="large"
+                  count={10}
+                  renderItem={(item) => (
+                    <PaginationItem
+                      slots={{ previous: IoArrowBackCircleOutline, next: IoArrowForwardCircleOutline }}
+                      {...item}
+                    />
+                  )}
+                />
+              </Stack>
+          </div>
     </div>
   );
 };
