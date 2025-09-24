@@ -50,7 +50,7 @@ export default function SecondSlider() {
   const images = ["./dis-ban-1.webp", "./dis-ban-2.webp"];
 
   return (
-    <div className="container py-5">
+    <div className="container pt-5 pb-12">
       <div className="flex gap-4">
         {/* Left (70%) */}
         <div className="w-[70%]">

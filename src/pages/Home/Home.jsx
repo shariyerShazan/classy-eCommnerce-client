@@ -16,8 +16,10 @@ import BagsProducts from '../../components/HomeSlider/Products/HomePageViews/Bag
 const Home = () => {
   return (
     <div className='bg-secondary'>
+
         <HomeSlider />
          <FreeShipingBanner />
+         
          {/* latest and fetureds */}
          <LatestProduct />
          <FeaturedProducts />

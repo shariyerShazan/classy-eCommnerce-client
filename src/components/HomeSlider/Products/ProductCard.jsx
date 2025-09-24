@@ -7,14 +7,14 @@ import { AiOutlineFullscreen } from "react-icons/ai";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { LuHeart } from "react-icons/lu";
 
-const ProducCard = () => {
+const ProductCard = () => {
    
       
   return (
-    <div className='py-6 productcard rounded-md group relative'>
-         <div className='imageWrapper w-[100%] h-[400px] border-1 border-gray-300 overflow-hidden rounded-lg hover:shadow-md'>
+    <div className='py-6 productcard rounded-md group relative '>
+         <div className='imageWrapper w-[100%] h-[400px] border-1  border-gray-300 overflow-hidden rounded-lg hover:shadow-md'>
                     <div
-                    className="absolute z-50 right-2 top-14 flex flex-col items-center gap-2 
+                    className="absolute z-40 right-2 top-14 flex flex-col items-center gap-2 
                     opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 
                     transition-all duration-500"
                     >
@@ -57,4 +57,4 @@ const ProducCard = () => {
   )
 }
 
-export default ProducCard
+export default ProductCard

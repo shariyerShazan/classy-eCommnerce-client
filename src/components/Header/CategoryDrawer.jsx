@@ -6,6 +6,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+import { RxCross1 } from "react-icons/rx";
 
 const categoriesData = [
   {
@@ -101,6 +102,12 @@ const CategoryDrawer = ({ openCtg, setOpenCtg }) => {
       {/* Logo on top */}
       <div className="flex justify-center py-4 border-b border-gray-200">
         <img src="./logo.svg" className="w-54" alt="Logo" />
+      </div>
+      <div className='flex justify-between py-4 px-4 text-lg border-b-1 border-b-gray-300'>
+           <p>Shop By Categories</p>
+           <button onClick={()=>(setOpenCtg(false))} className='hover:text-primary cursor-pointer'>
+              <RxCross1 size={20}/>
+           </button>
       </div>
 
       {/* Categories */}

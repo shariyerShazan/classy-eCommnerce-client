@@ -96,3 +96,43 @@ body {
 .ss-1xc33vf-MuiRating-root{
   color: #FAAF00 !important;
 }
+
+
+
+
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.Mui-checked {
+  color: #ff5252 !important; 
+}
+
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root {
+  color: #374151 !important; 
+}
+
+.css-1xcmt9q-MuiSlider-thumb{
+  background-color: #ff5252 !important; 
+}
+.css-xvk2i-MuiSlider-track{
+  border-color: #ff5252 !important; 
+}
+.css-13vpke-MuiSlider-root{
+  color:  #ff5252 !important; 
+}
+
+
+
+
+.scrollbar-always::-webkit-scrollbar {
+  width: 4px; 
+}
+
+.scrollbar-always::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.scrollbar-always::-webkit-scrollbar-thumb {
+  background: #ff5252; 
+}
+
+.scrollbar-always::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

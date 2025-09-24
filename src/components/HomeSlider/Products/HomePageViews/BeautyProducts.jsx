@@ -4,7 +4,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 import { LuMoveRight } from "react-icons/lu";
 import { Navigation } from 'swiper/modules'
-import ProducCard from '../ProducCard';
+import ProductCard from '../ProductCard';
 import Button from '@mui/material/Button';
 
 
@@ -26,7 +26,7 @@ const BeautyProducts = () => {
              >
               {[1,2,3,4,5,6,7,8,9,10,11,12].map((item)=>{
                 return <SwiperSlide key={item}>
-                          <ProducCard />
+                          <ProductCard />
                       </SwiperSlide>
               })}   
              </Swiper>
