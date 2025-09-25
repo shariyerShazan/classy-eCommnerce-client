@@ -124,20 +124,15 @@ body {
 .scrollbar-always::-webkit-scrollbar {
   width: 4px; 
 }
-
 .scrollbar-always::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
-
 .scrollbar-always::-webkit-scrollbar-thumb {
   background: #ff5252; 
 }
-
 .scrollbar-always::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-
 
 
 
@@ -150,3 +145,4 @@ body {
 .MuiPaginationItem-root.Mui-selected:hover {
   background-color: #ff5252 !important; 
 }
+
